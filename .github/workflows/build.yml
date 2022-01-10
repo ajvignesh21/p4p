@@ -148,6 +148,14 @@ jobs:
             numpy: numpy==1.19.3
             cython: Cython==0.29.23
             pre: linux32
+            
+          - name: linux 3.6 aarch64
+            os: ubuntu-latest
+            pyver: cp36-cp36m
+            piparch: manylinux2014_aarch64
+            numpy: numpy==1.19.0
+            cython: Cython==0.29.26
+            
 
           # OSX py builds
           - name: osx 2.7 intel
