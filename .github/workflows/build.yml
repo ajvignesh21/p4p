@@ -156,6 +156,27 @@ jobs:
             numpy: numpy==1.12.1
             cython: Cython==0.29.2
             
+          - name: linux 3.7 aarch64
+            os: ubuntu-latest
+            pyver: cp37-cp37m
+            piparch: manylinux2014_aarch64
+            numpy: numpy==1.16.2
+            cython: Cython==0.29.2
+          
+          - name: linux 3.8 aarch64
+            os: ubuntu-latest
+            pyver: cp38-cp38m
+            piparch: manylinux2014_aarch64
+            numpy: numpy==1.17.3
+            cython: Cython==0.29.2
+          
+          - name: linux 3.9 aarch64
+            os: ubuntu-latest
+            pyver: cp39-cp39m
+            piparch: manylinux2014_aarch64
+            numpy: numpy==1.19.3
+            cython: Cython=0.29.23
+            
 
           # OSX py builds
           - name: osx 2.7 intel
