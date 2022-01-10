@@ -153,8 +153,8 @@ jobs:
             os: ubuntu-latest
             pyver: cp36-cp36m
             piparch: manylinux2014_aarch64
-            numpy: numpy==1.19.0
-            cython: Cython==0.29.26
+            numpy: numpy==1.12.1
+            cython: Cython==0.29.2
             
 
           # OSX py builds
