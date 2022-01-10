@@ -153,14 +153,14 @@ jobs:
             os: ubuntu-latest
             pyver: cp36-cp36m
             piparch: manylinux2014_aarch64
-            numpy: numpy==1.12.1
+            numpy: numpy==1.19.0
             cython: Cython==0.29.2
             
           - name: linux 3.7 aarch64
             os: ubuntu-latest
             pyver: cp37-cp37m
             piparch: manylinux2014_aarch64
-            numpy: numpy==1.16.2
+            numpy: numpy==1.19.0
             cython: Cython==0.29.2
           
           - name: linux 3.8 aarch64
@@ -279,6 +279,7 @@ jobs:
 
       - name: Native Prep/Info
         run: |
+          yum install python-pip
           python -m pip install --upgrade pip
           python -m pip install setuptools wheel twine
           which python
